@@ -16,34 +16,21 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-
+	<script src="<?php echo get_template_directory() . '/js/bootstrap.js'; ?>"></script>
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'spritekit-v3' ); ?></a>
+	<div class="container">
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-			endif;
-
-			$description = get_bloginfo( 'description', 'display' );
-			if ( $description || is_customize_preview() ) : ?>
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-			<?php
-			endif; ?>
+			<img src="<?php echo get_template_directory_uri().'/assets/img/logo2.png'; ?>" width="35" style="margin-left:10px; margin-top:3px;" alt="logo" class="logo"/>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'spritekit-v3' ); ?></button>
+			
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',
@@ -51,6 +38,10 @@
 				) );
 			?>
 		</nav><!-- #site-navigation -->
+		<div class="price-list">
+			<a href="#" id="price-list"> Cennik</a>
+			<a href="#" id="order"> Zamów</a>
+		</div>
 	</header><!-- #masthead -->
-
+	</div>
 	<div id="content" class="site-content">
