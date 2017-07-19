@@ -17,6 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<script src="<?php echo get_template_directory() . '/js/bootstrap.js'; ?>"></script>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400i,700" rel="stylesheet"> 
 	<?php wp_head(); ?>
 </head>
 
@@ -26,7 +27,7 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<img src="<?php echo get_template_directory_uri().'/assets/img/logo2.png'; ?>" width="35" style="margin-left:10px; margin-top:3px;" alt="logo" class="logo"/>
+			<img src="<?php echo get_template_directory_uri().'/assets/img/logo2.png'; ?>" width="35" style="margin-left:10px; margin-top:3px;" alt="logo" class="logo "/>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
@@ -36,7 +37,7 @@
 					'theme_location' => 'menu-1',
 					'menu_id'        => 'primary-menu',
 				) );
-			?>
+?>
 		</nav><!-- #site-navigation -->
 		<div class="price-list">
 			<a href="#" id="price-list"> Cennik</a>
