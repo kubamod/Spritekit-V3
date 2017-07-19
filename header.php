@@ -27,12 +27,12 @@
 
 	<header id="masthead" class="site-header">
 		<div class="container">
-		<div class="site-branding">
-			<img src="<?php echo get_template_directory_uri().'/assets/img/logo2.png'; ?>" width="35" style="margin-left:10px; margin-top:3px;" alt="logo" class="logo "/>
-		</div><!-- .site-branding -->
+		
+			
+		
 
 		<nav id="site-navigation" class="main-navigation">
-			
+			<img src="<?php echo get_template_directory_uri().'/assets/img/logo2.png'; ?>" width="35"  alt="logo" class="logo "/>
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',
@@ -40,10 +40,7 @@
 				) );
 ?>
 		</nav><!-- #site-navigation -->
-		<div class="price-list">
-			<a href="#" id="price-list"> Cennik</a>
-			<a href="#" id="order"> Zamów</a>
-		</div>
+		
 		</div>
 	</header><!-- #masthead -->
 	

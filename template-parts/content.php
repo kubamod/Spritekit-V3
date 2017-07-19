@@ -12,7 +12,9 @@
 <article c id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <div class="post">
 	
-			
+	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
+    <img src="<?php echo $url; ?>" class="img-responsive content-image" style="margin:auto;" />
+		
 	<header class="entry-header">
 		
 		<?php
@@ -27,7 +29,7 @@
 		<?php
 endif; ?>
 	<div class="entry-meta">
-		<span><?php the_time('M d, Y');  ?></span>
+		<span class="time"><?php the_time('M d, Y');  ?></span>
 		<a target="_blank"  href="https://twitter.com/modrzjwzky?lang=pl">@<?php the_author() ?></a>
 	</div>
 	

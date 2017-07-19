@@ -41,8 +41,11 @@ body {
 }
 
 .site-header {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	color: #000;
 	background-color: rgba(255, 255, 255, 0.8);
+	height: 55px;
+	
 }
 
 .site-header a {
@@ -67,9 +70,10 @@ body {
 	display: block;
 }
 
-.site-header {
-	height: 50px;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+
+.main-navigation ul {
+	display: inline-block;
 }
 
 .main-navigation ul li  {
@@ -89,22 +93,12 @@ body {
 	text-decoration: none;
 }
 
-.price-list {
-	float: right;	
-	margin-top: 10px;
+.menu {
+	display: inline;
 }
 
-.price-list a {
-	font-size: 16px;
-	color: #fff;	
-}
-
-.price-list #order {
-	background-color: #fff;
-	color: #005aff;
-	padding: 4px;
-	border-radius: 4px;
-	margin-left: 10px;
+.menu ul {
+	padding-left: 0;
 }
 
 .caption {
@@ -236,4 +230,12 @@ body {
 
 .content-area {
 	padding-top: 100px;
+}
+
+.time {
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.4);
+}
+.content-image {
+	border-radius: 4px;
 }
