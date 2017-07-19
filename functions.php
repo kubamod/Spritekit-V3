@@ -116,20 +116,7 @@ add_action( 'widgets_init', 'spritekit_v3_widgets_init' );
 
 
 
-// register custom post type 'my_custom_post_type'
-add_action( 'init', 'create_my_post_type' );
-function create_my_post_type() {
-    register_post_type( 'my_custom_post_type',
-      array(
-        'labels' => array( 'name' => __( 'Products' ) ),
-        'public' => true
-    )
-  );
-}
-
-//add post-formats to post_type 'my_custom_post_type'
-add_post_type_support( 'my_custom_post_type', 'post-formats' );
-
+add_theme_support( 'post-formats', array( 'aside', 'gallery', 'image', 'aside', 'status' ) );
 /**
  * Enqueue scripts and styles.
  */
