@@ -23,9 +23,10 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<div class="container">
+	
 
 	<header id="masthead" class="site-header">
+		<div class="container">
 		<div class="site-branding">
 			<img src="<?php echo get_template_directory_uri().'/assets/img/logo2.png'; ?>" width="35" style="margin-left:10px; margin-top:3px;" alt="logo" class="logo "/>
 		</div><!-- .site-branding -->
@@ -43,6 +44,7 @@
 			<a href="#" id="price-list"> Cennik</a>
 			<a href="#" id="order"> Zamów</a>
 		</div>
+		</div>
 	</header><!-- #masthead -->
-	</div>
-	<div id="content" class="site-content">
+	
+	<div id="content" class="site-content container">

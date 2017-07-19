@@ -52,7 +52,7 @@ function spritekit_v3_entry_footer() {
 		$categories_list = get_the_category_list( esc_html__( ', ', 'spritekit-v3' ) );
 		if ( $categories_list ) {
 			/* translators: 1: list of categories. */
-			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'spritekit-v3' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+			printf( '<span class="cat-links">' . esc_html__( '%1$s', 'spritekit-v3' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
 
 		/* translators: used between list items, there is a space after the comma */
@@ -64,12 +64,12 @@ function spritekit_v3_entry_footer() {
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-		echo '<span class="comments-link">';
+		echo '<br /><span class="comments-link">';
 		comments_popup_link(
 			sprintf(
 				wp_kses(
 					/* translators: %s: post title */
-					__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'spritekit-v3' ),
+					__( 'Leave a Comment', 'spritekit-v3' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -95,7 +95,7 @@ function spritekit_v3_entry_footer() {
 			),
 			get_the_title()
 		),
-		'<span class="edit-link">',
+		'<br /><span class="edit-link">',
 		'</span>'
 	);
 }

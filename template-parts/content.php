@@ -9,8 +9,12 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article c id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div class="post">
+	
+			
 	<header class="entry-header">
+		
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -19,11 +23,14 @@
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php spritekit_v3_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		
 		<?php
-		endif; ?>
+endif; ?>
+	<div class="entry-meta">
+		<span><?php the_time('M d, Y');  ?></span>
+		<a target="_blank"  href="https://twitter.com/modrzjwzky?lang=pl">@<?php the_author() ?></a>
+	</div>
+	
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -31,7 +38,7 @@
 			the_content( sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'spritekit-v3' ),
+					__( 'Continue reading >', 'spritekit-v3' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -51,4 +58,6 @@
 	<footer class="entry-footer">
 		<?php spritekit_v3_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+</div>
 </article><!-- #post-<?php the_ID(); ?> -->
+<hr class="separator" />

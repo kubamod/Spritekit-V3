@@ -18,20 +18,44 @@ html {
 
 }
 
+a {
+	color: rgba(0, 122, 255, 1);
+}
+
 a:hover {
 	text-decoration: none;
 
 }
 
 body {
-	background-color: #101010;
-	color: #fff !important;
+	background-color: #fff;
+	color: #000 !important;
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
-.site-header {
-	margin-top: 40px;
+
+
+.presentation {
+	color: #fff !important;
+	background-color: #101010;
 }
+
+.site-header {
+	color: #000;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.site-header a {
+	color: #000 !important;
+}
+
+.presentation .site-header {
+	margin-top: 40px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+
 
 .logo {
 	float: left;
@@ -177,4 +201,39 @@ body {
 
 .price-list-cards .card h3 {
 	margin: 0;
+}
+
+/* ################## BLOG ################## */
+
+.entry-title a {
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.entry-title a:hover {
+	color: rgba(0, 122, 255, 1);
+	text-decoration: underline;
+}
+
+.post {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 19px !important;
+	line-height: 29px;
+	font-weight: normal !important;
+}
+
+.entry-meta {
+	margin-bottom: 10px;
+}
+
+.separator {
+	max-width: 200px;
+	border-color: rgba(0, 0, 0, 0.3);
+	margin-top: 80px;
+	margin-bottom:80px;
+}
+
+.content-area {
+	padding-top: 100px;
 }

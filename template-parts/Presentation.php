@@ -1,7 +1,7 @@
 <?php /* Template Name: CustomPageT1 */ ?>
 
 <?php get_header(); ?>
-
+</div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main presentation">
         <div class="swg">
