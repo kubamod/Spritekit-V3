@@ -22,6 +22,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+
 <div id="page" class="site">
 	
 
@@ -32,7 +33,7 @@
 		
 
 		<nav id="site-navigation" class="main-navigation">
-			<img src="<?php echo get_template_directory_uri().'/assets/img/logo2.png'; ?>" width="35"  alt="logo" class="logo "/>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri().'/assets/img/logo2.png'; ?>" width="35"  alt="logo" class="logo "/></a>
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',
@@ -45,3 +46,5 @@
 	</header><!-- #masthead -->
 	
 	<div id="content" class="site-content container">
+		
+<div class="breadcrumb"><?php get_breadcrumb(); ?></div>
