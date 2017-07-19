@@ -215,13 +215,22 @@ body {
 	max-width: 900px;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 19px !important;
+	font-size: 16px !important;
 	line-height: 29px;
 	font-weight: normal !important;
 }
 
+.post p {
+	color: rgba(0, 0, 0, 0.7);
+}
+
 .entry-meta {
 	margin-bottom: 10px;
+	font-size: 17px;
+}
+
+.entry-footer {
+	font-size: 16px;
 }
 
 .separator {
@@ -236,7 +245,7 @@ body {
 }
 
 .time {
-	color: rgba(0, 0, 0, 0.4);
+	color: rgba(0, 0, 0, 0.8);
 }
 .content-image {
 	border-radius: 4px;
@@ -266,4 +275,22 @@ body {
 
 .page-header {
 	border-bottom: none !important;
+}
+
+.rss {
+	float: right;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	color: rgba(0, 0, 0, 0.3);
+	padding-left: 4px;
+	padding-right: 4px;
+	border-radius: 4px;
+}
+
+.rss:hover {
+	color: rgba(0, 0, 0, 0.8);
+}
+
+#disqus_thread {
+	max-width: 900px;
+	margin: auto;
 }

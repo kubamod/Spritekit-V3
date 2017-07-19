@@ -17,7 +17,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<script src="<?php echo get_template_directory() . '/js/bootstrap.js'; ?>"></script>
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400i,700" rel="stylesheet"> 
 	<?php wp_head(); ?>
 </head>
 
@@ -47,4 +46,4 @@
 	
 	<div id="content" class="site-content container">
 		
-<div class="breadcrumb"><?php get_breadcrumb(); ?></div>
+<div class="breadcrumb"><?php get_breadcrumb(); ?><a class="rss" href="<?php echo esc_url( home_url( '/?feed=rss' ) ); ?>">RSS</a></div>
