@@ -230,7 +230,7 @@ body {
 }
 
 .entry-footer {
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .separator {
@@ -293,4 +293,36 @@ body {
 #disqus_thread {
 	max-width: 900px;
 	margin: auto;
+}
+
+.status {
+	max-width: 500px;
+	min-height: 50px;
+	background-color: none;
+	border: 1px solid rgba(255,59,48,1);
+	padding: 0;
+	text-align: center;
+	font-size: 18px;
+	line-height: 50px;
+	border-radius: 4px;
+	margin: auto;
+	
+}
+
+.status a {
+	color: rgba(255,59,48,1);
+}
+
+.status p {
+	margin: 0;
+}
+
+.status a:hover {
+	background-color: rgba(0, 122, 255, 1);
+	color: #fff;
+	border-radius: 4px;
+}
+
+.tags-links {
+	color:rgba(0, 122, 255, 1);
 }

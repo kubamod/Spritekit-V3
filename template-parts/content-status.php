@@ -9,15 +9,20 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="aside" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" class="status" <?php post_class(); ?>>
 
 	<div class="entry-content-aside">
 		<?php
 			the_content( sprintf(
 				/* translators: %s: Name of current post. */
+				wp_kses( __( 'Czytaj dalej <span class="meta-nav">&rarr;</span>', '_s' ), array( 'span' => array( 'class' => array() ) ) ),
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			) );
 
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', '_s' ),
+				'after'  => '</div>',
+			) );
 		?>
         
         <? $custom_fields = get_post_custom();
@@ -27,4 +32,4 @@
 
 	
 </article><!-- #post-## -->
-<div class="line " role="separator"> </div>
+<hr class="separator" />
