@@ -39,11 +39,13 @@ endif;
 		if ( 'post' === get_post_type() ) : ?>
 		
 		<?php
-endif; ?>
-	<div class="entry-meta">
+		endif; ?>
+	<div class="entry-meta"> 
+		
 		<span class="time"><?php the_time('M d, Y');  ?></span>
 		<a target="_blank"  href="https://twitter.com/modrzjwzky?lang=pl">@<?php the_author() ?></a>
-	</div>
+		
+	</div> <!-- entry meta end -->
 	
 	</header><!-- .entry-header -->
 
@@ -74,5 +76,16 @@ endif; ?>
 	</footer><!-- .entry-footer -->
 </div>
 </article><!-- #post-<?php the_ID(); ?> -->
-<hr class="separator" />
+<?php if(is_singular()){
+?>	
+	<hr class="separator" style="max-width:900px;"/>
+	<h2 style="text-align:center; margin-bottom:60px">Comments</h2>
+<?php
+} else {
+?> 
+	<hr class="separator" />
+<?php
+}
+?>
+
 

@@ -41,7 +41,7 @@ get_header(); ?>
 
 			endwhile;
 
-			the_posts_navigation();
+			
 
 		else :
 
@@ -49,6 +49,10 @@ get_header(); ?>
 
 		endif; ?>
 
+<div class="pagination">
+                <?php echo paginate_links( $args ); ?> <br />
+                <img src="<?php echo get_bloginfo('template_url');?>/assets/img/engine2.png" style="margin-top:20px;" width="100" />
+                </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

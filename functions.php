@@ -116,7 +116,7 @@ add_action( 'widgets_init', 'spritekit_v3_widgets_init' );
 
 
 
-add_theme_support( 'post-formats', array( 'aside', 'gallery', 'image', 'aside', 'status' ) );
+add_theme_support( 'post-formats', array( 'aside', 'gallery', 'image', 'link', 'status' ) );
 /**
  * Enqueue scripts and styles.
  */

@@ -44,11 +44,39 @@ body {
 }
 
 .site-header {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	margin-top: 20px;
+	margin-bottom: 20px;
 	color: #000;
 	background-color: rgba(255, 255, 255, 0.8);
 	height: 55px;
+	-webkit-backdrop-filter: blur(20px);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+select {
+	display: inline;
+	-webkit-appearance: none; 
+	padding-left: 40px !important;
+	border:1px solid rgba(0, 0, 0, 0.1);
+	padding-right: 40px;
+   -moz-appearance: none;
+   appearance: none;  
+	padding-left: 0;
+}
+
+.responsiveMenuSelect {
+	margin-top: 15px;
+}
+
+.responsiveSelectContainer {
+	display: inline-block;
+	float: right;
 	
+}
+
+.sticky-element-active {
+	border-bottom: none;
+	idth: auto !important;
 }
 
 .site-header a {
@@ -96,17 +124,16 @@ body {
 	text-decoration: none;
 }
 
-.menu {
+.menu-menu-1-container {
 	display: inline;
 }
 
-.menu ul {
+.menu-menu-1-container ul {
 	padding-left: 0;
 }
 
 .caption {
 	font-size: 50px;
-	
 	max-width: 500px;
 	text-align: center;
 	margin: auto;
@@ -221,7 +248,7 @@ body {
 }
 
 .post p {
-	color: rgba(0, 0, 0, 0.7);
+	color: rgba(0, 0, 0, 0.8);
 }
 
 .entry-meta {
@@ -291,8 +318,9 @@ body {
 }
 
 #disqus_thread {
-	max-width: 900px;
+	max-width: 700px;
 	margin: auto;
+	margin-bottom: 40px;
 }
 
 .status {
@@ -301,6 +329,7 @@ body {
 	background-color: none;
 	border: 1px solid rgba(255,59,48,1);
 	padding: 0;
+	color: rgba(255,59,48,1);
 	text-align: center;
 	font-size: 18px;
 	line-height: 50px;
@@ -325,4 +354,90 @@ body {
 
 .tags-links {
 	color:rgba(0, 122, 255, 1);
+}
+
+.caption-image-post {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 50%;
+    transform: translate(0,50%);
+    color: #FFF;
+}
+.caption-image-post a {
+	color: #fff;
+}
+
+.caption-image-post span {
+	color: #fff;
+}
+
+
+.image-post-type {
+    position: relative;
+}
+
+.image-post-type img {
+	border-radius: 4px;
+}
+
+.notka {
+	
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	color: #000 !important;
+	border-radius: 4px;
+}
+
+code {
+	
+	color: rgba(0,0,0,0.8);
+	padding: 2px 6px 2px 6px;
+	border: 1px solid rgba(0,0,0,0.3);
+	background-color: rgba(0, 0, 0, 0.03) !important;
+
+}
+
+.site-footer {
+	background-color: rgba(0,0,0,0.9);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top:30px;
+	color: #fff;
+}
+
+.first-menu {
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0.05);
+	
+}
+
+.pagination {
+  	margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
+.comments-count {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	color: rgba(0, 0, 0, 0.1);
+	padding-left: 8px;
+	padding-right: 8px;
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+blockquote {
+	max-width: 700px;
+	margin: auto;
+	font-size: 16px;
+	font-style: italic;
+	margin-bottom: 10px;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.page-title {
+	text-align: center;
 }

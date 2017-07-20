@@ -32,7 +32,8 @@
 		
 
 		<nav id="site-navigation" class="main-navigation">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri().'/assets/img/logo2.png'; ?>" width="35"  alt="logo" class="logo "/></a>
+			
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri().'/assets/img/logo3.png'; ?>" width="35"  alt="logo" class="logo "/></a>
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',
@@ -43,7 +44,6 @@
 		
 		</div>
 	</header><!-- #masthead -->
-	
-	<div id="content" class="site-content container">
+<div id="content" class="site-content container">
 		
 <div class="breadcrumb"><?php get_breadcrumb(); ?><a class="rss" href="<?php echo esc_url( home_url( '/?feed=rss' ) ); ?>">RSS</a></div>

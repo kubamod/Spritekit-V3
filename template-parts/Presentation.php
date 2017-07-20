@@ -1,4 +1,4 @@
-<?php /* Template Name: CustomPageT1 */ ?>
+<?php /* Template Name: Presentation */ ?>
 
 <?php get_header(); ?>
 </div>
