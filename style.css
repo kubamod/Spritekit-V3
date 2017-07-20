@@ -441,3 +441,38 @@ blockquote {
 .page-title {
 	text-align: center;
 }
+
+.microblog {
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 70px;
+	font-size: 16px !important;
+	line-height: 29px;
+	font-weight: normal !important;
+	display: block;
+}
+
+.entry-content-microblog {
+	display: block;
+	float: left;
+	min-height: 70px;
+}
+
+.avatar {
+	border-radius: 100%;
+	display: block;
+	float: left;
+	background-repeat: no-repeat;
+	background-size: 100px;
+	background-position-x: 40%;
+	width: 70px;
+	height: 70px;
+}
+
+.microblog-time {
+	display: block;
+	font-size: 14px;
+	height: 20px;
+	color: rgba(0, 122, 255, 1);
+}
