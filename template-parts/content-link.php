@@ -15,7 +15,7 @@
 	<div class="col-xs-10">
 	<span class="microblog-time">
 
-	<a href="<?php get_permalink(); ?>"><?php the_time('m-j-y g:i A'); ?></span></a>
+	<a href="<?php the_permalink(); ?>"><?php the_time('m-j-y g:i A'); ?></span></a>
 	<div class="entry-content-microblog">
 		<?php
 			the_content( sprintf(
