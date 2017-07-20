@@ -10,8 +10,12 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" class="microblog" <?php post_class(); ?>>
-	<div style="background-image:url('<?php echo get_template_directory_uri().'/assets/img/avatar.jpg'; ?>');" alt="avatar Kuba Modrzejewski"  class="avatar"></div>
-	<?php the_date('Y-m-d', '<span class="microblog-time">', '</span>'); the_time('g:i a'); ?>
+<div class="row">
+	<div class="col-xs-2"><div style="background-image:url('<?php echo get_template_directory_uri().'/assets/img/avatar.jpg'; ?>');" alt="avatar Kuba Modrzejewski"  class="avatar"></div></div>
+	<div class="col-xs-10">
+	<span class="microblog-time">
+
+	<a href="<?php get_permalink(); ?>"><?php the_time('m-j-y g:i A'); ?></span></a>
 	<div class="entry-content-microblog">
 		<?php
 			the_content( sprintf(
@@ -29,9 +33,23 @@
         <? $custom_fields = get_post_custom();
         echo $$custom_fields; 
 ?>
-<div style="clear:both;"/>
-	</div><!-- .entry-content -->
 
-	
+	</div><!-- .entry-content -->
+</div><!-- .col-xs-8 -->
+</div>
 </article><!-- #post-## -->
-<hr class="separator" />
+
+
+<?php 
+ 
+
+ if (get_previous_post(true)) :
+	?>
+		<hr class="separator" style="margin-top:10px;margin-bottom:30px; border-color:rgba(0, 0, 0, 0)" />
+	<?php
+ else :
+	 ?>
+	 	<hr class="separator" />
+	 <?php
+ endif;
+?>

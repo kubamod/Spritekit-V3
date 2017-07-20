@@ -26,7 +26,7 @@ endif;
 	
 	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
     <img src="<?php echo $url; ?>" class="img-responsive content-image" style="margin:auto;" />
-		
+		<div class="full-post">
 	<header class="entry-header">
 		
 		<?php
@@ -74,6 +74,7 @@ endif;
 	<footer class="entry-footer">
 		<?php spritekit_v3_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+	</div>
 </div>
 </article><!-- #post-<?php the_ID(); ?> -->
 <?php if(is_singular()){
