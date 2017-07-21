@@ -231,11 +231,16 @@ select {
 
 .entry-title a {
 	color: rgba(0, 0, 0, 0.8);
+	font-size: 26px;
+}
+
+.entry-title {
+	font-size: 26px;
 }
 
 .entry-title a:hover {
-	color: rgba(0, 122, 255, 1);
-	border-bottom: 2px solid rgba(0, 122, 255, 1);
+	color: rgba(0, 0, 0, 1);
+	border-bottom: 2px solid rgba(0, 0, 0, 1);
 }
 
 .post {
@@ -249,6 +254,7 @@ select {
 
 .post p {
 	color: rgba(0, 0, 0, 0.8);
+	margin: auto;
 }
 
 .full-post {
@@ -264,6 +270,7 @@ select {
 
 .entry-footer {
 	font-size: 14px;
+	margin-top: 10px;
 }
 
 .separator {
@@ -278,10 +285,14 @@ select {
 }
 
 .time {
-	color: rgba(0, 0, 0, 0.8);
+	color: rgba(0, 0, 0, 0.4);
 }
 .content-image {
 	border-radius: 4px;
+}
+
+.img-post-type {
+	filter: brightness(80%);
 }
 
 .entry-content {
@@ -369,15 +380,32 @@ select {
     position: absolute;
     bottom: 50%;
     transform: translate(0,50%);
-    color: #FFF;
+	color: #FFF;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 .caption-image-post a {
 	color: #fff;
 }
 
+.caption-image-post a:hover {
+	color: rgba(0, 0, 0, 0.8);
+	
+	background-color: rgba(255, 255, 255, 1);
+}
+
 .caption-image-post span {
 	color: #fff;
 }
+
+
+.caption-image-post .time {
+	text-align: center;
+}
+
+.caption-image-post .entry-meta {
+	margin: auto;
+} 
 
 
 .image-post-type {
@@ -407,11 +435,14 @@ code {
 }
 
 .site-footer {
-	background-color: rgba(0,0,0,0.9);
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin-top:30px;
-	color: #fff;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.site-info {
+	text-align: center;
 }
 
 .first-menu {
@@ -422,7 +453,8 @@ code {
 
 .pagination {
   	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
+
     display: block;
     text-align: center;
 }
@@ -486,3 +518,18 @@ blockquote {
 .microblog-time a {
 	color: rgba(255,59,48,1);
 }
+
+.post-links {
+	max-width: 900px;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	margin-bottom: 60px;
+	
+}
+
+.post-links .col-xs-6 {
+	padding-left: 0;
+	padding-right: 0;
+	color: rgba(0, 122, 255, 1);
+}
+

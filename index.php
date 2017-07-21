@@ -51,7 +51,7 @@ get_header(); ?>
 
 <div class="pagination">
                 <?php echo paginate_links( $args ); ?> <br />
-                <img src="<?php echo get_bloginfo('template_url');?>/assets/img/engine2.png" style="margin-top:20px;" width="100" />
+                <img src="<?php echo get_bloginfo('template_url');?>/assets/img/tesla.png" style="margin-bottom:20px;" width="200" />
                 </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->

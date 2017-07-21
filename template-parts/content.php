@@ -76,17 +76,28 @@ endif;
 	</footer><!-- .entry-footer -->
 	</div>
 </div>
+
 </article><!-- #post-<?php the_ID(); ?> -->
-<?php if(is_singular()){
+<?php if(is_singular()):
+
 ?>	
-	<hr class="separator" style="max-width:900px;"/>
+	<hr class="separator" style="max-width:900px; margin-bottom:20px; margin-top:20px;"/>
+	<div class="post-links row">
+
+
+	<?php 
+	echo previous_post_link('<div class="col-xs-6" style="text-align:left;">< %link</div>');
+	echo next_post_link('<div class="col-xs-6" style="text-align:right;"> %link ></div>');
+?>
+</div>
 	<h2 style="text-align:center; margin-bottom:60px">Comments</h2>
-<?php
-} else {
-?> 
+	<?php 
+	
+else:
+?>
 	<hr class="separator" />
 <?php
-}
+endif;
 ?>
 
 

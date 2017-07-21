@@ -45,9 +45,9 @@
 
  if (get_previous_post(true)) :
 	?>
-		<hr class="separator" style="margin-top:10px;margin-bottom:30px; border-color:rgba(0, 0, 0, 0)" />
+		<hr class="separator microblog-separator" style="margin-top:10px;margin-bottom:30px; border-color:rgba(0, 0, 0, 0)" />
 	<?php
- else :
+else :
 	 ?>
 	 	<hr class="separator" />
 	 <?php
