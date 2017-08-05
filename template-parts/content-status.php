@@ -25,9 +25,7 @@
 			) );
 		?>
         
-        <? $custom_fields = get_post_custom();
-        echo $$custom_fields; 
-        ?>
+        
 	</div><!-- .entry-content -->
 
 	

@@ -50,8 +50,8 @@ get_header(); ?>
 		endif; ?>
 
 <div class="pagination">
-                <?php echo paginate_links( $args ); ?> <br />
-                <img src="<?php echo get_bloginfo('template_url');?>/assets/img/tesla.png" style="margin-bottom:20px;" width="200" />
+                <?php echo paginate_links(); ?> <br />
+                <img src="<?php echo get_template_directory_uri() . '/assets/img/spaceX.png'; ?>" style="margin-bottom:20px;" width="100" />
                 </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
