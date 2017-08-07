@@ -324,6 +324,8 @@ select {
 
 .page-title {
 	text-align: center;
+	margin-bottom: 80px;
+
 }
 
 .page-header {
@@ -541,18 +543,35 @@ blockquote {
 	color: rgba(0, 122, 255, 1);
 }
 
+.comments-h {
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.no-results .page-content {
+	text-align: center;
+}
+
+
+article {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 /* ######################## SPRITEKITT-HOME ############################# */
 
 #chuj { 
     text-align: center;
-    font-size: 46px;
+	font-size: 46px;
+	margin-top: 40px;
     font-weight: bold;
    
 }
 
 .spriteKit #p {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
     line-height: 28px;
@@ -567,7 +586,7 @@ blockquote {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 } 
 
 
@@ -595,15 +614,17 @@ blockquote {
 }
 
 .spritemen {
-	transform: translateX(10px);
-	z-index: 100;
-	margin: auto;
-	background-image: url("http://i.imgur.com/5OTYpXE.png");
-	-webkit-animation: rainbow 1s  ease infinite;
-	-z-animation: rainbow 1s  ease  infinite;
-	-o-animation: rainbow 1s ease infinite;
-	animation: rainbow 1s ease infinite;
-	margin-bottom: -20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	
+	background: linear-gradient(252deg, #00ebff, #ff00fa, #f2ff00, #74a7a7, #ff0024, #3f4c8b, #3f4c8b, #42f6f4);
+background-size: 1600% 1600%;
+
+-webkit-animation: AnimationName 20s ease infinite;
+-moz-animation: AnimationName 20s ease infinite;
+animation: AnimationName 20s ease infinite;
+
 }
 
 .spritekit-row h4
@@ -635,7 +656,7 @@ blockquote {
     position: relative;
     top:5px;
     margin-right: 10px;
-    color: #fff;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 ul.links-my li {
@@ -644,6 +665,22 @@ ul.links-my li {
 .spritekit-row a:hover {
     background-color: none;
     text-decoration: underline;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 90%}
+    50%{background-position:100% 11%}
+    100%{background-position:0% 90%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 90%}
+    50%{background-position:100% 11%}
+    100%{background-position:0% 90%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 90%}
+    50%{background-position:100% 11%}
+    100%{background-position:0% 90%}
 }
 
 /* ######################### PORTFOLIO ########################### */
@@ -701,4 +738,30 @@ ul.links-my li {
 	color:#000;
 
 	
+}
+
+.prev-links {
+	min-height: 200px;
+	background-color: rgba(0, 0, 0, 0.05);
+	padding-top: 50px;
+	padding-bottom: 80px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+.prev-links h3 {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 300;
+	color: rgba(0, 0, 0, 0.3);
+
+}
+
+.prev-links a {
+	margin: auto;
+	display: block;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 200;
 }

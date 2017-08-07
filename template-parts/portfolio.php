@@ -7,7 +7,7 @@ global $post;
 <!-- Nav tabs -->
 <ul class="nav nav-pils nav-justified" role="tablist">
   <li class="nav-item nav-first">
-    <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Games</a>
+    <a class="nav-link active" data-toggle="tab" href="#Games" role="tab">Games</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Illustrations</a>
@@ -22,11 +22,13 @@ global $post;
 
 <!-- Tab panes -->
 <div class="tab-content portfolio-tab-content">
-  <div class="tab-pane active" id="home" role="tabpanel">
+  <div class="tab-pane active" id="Games" role="tabpanel">
 <div class="row" style="margin:auto;">
             <?php 
-            $args = array();
-            $myposts = get_posts( $args );
+            $args = array(
+                'category_name' => 'themes'
+            );
+            $myposts = get_posts($args);
             
             foreach ( $myposts as $post ) : setup_postdata( $post );
             

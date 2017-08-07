@@ -13,7 +13,7 @@
 	
 
 
-<article c id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <?php 
 if (is_singular()) :
 ?>
@@ -78,26 +78,40 @@ endif;
 </div>
 
 </article><!-- #post-<?php the_ID(); ?> -->
+</div>
+</div>
 <?php if(is_singular()):
 
 ?>	
-	<hr class="separator" style="max-width:900px; margin-bottom:20px; margin-top:20px;"/>
+
+	
+	<div class="prev-links">
+		<div class="container" style="max-width:900px;">
+		<h3>Previous</h3>
+		<?php echo previous_post_link('%link'); ?>
+		</div>
+	</div>
+
 	<div class="post-links row">
 
 
 	<?php 
+	/*
 	echo previous_post_link('<div class="col-xs-6" style="text-align:left;">< %link</div>');
 	echo next_post_link('<div class="col-xs-6" style="text-align:right;"> %link ></div>');
-?>
+	*/
+	?>
 </div>
-	<h2 style="text-align:center; margin-bottom:60px">Comments</h2>
+	<h2 class="comments-h">Comments</h2>
 	<?php 
 	
 else:
 ?>
+
 	<hr class="separator" />
 <?php
 endif;
 ?>
+
 
 

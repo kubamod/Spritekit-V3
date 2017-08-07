@@ -3,10 +3,10 @@
 <?php get_header(); 
 global $post;
 ?>
-<div class="container">
-    <div class="spriteKit">
+<div class="container" style="max-width:900px; margin:auto;">
+    <div class="spriteKit" >
 
-        <img src="http://i.imgur.com/5gzXQEN.png" class="img-responsive spritemen"  width="200" />
+        <img src="<?php echo get_template_directory_uri() . '/assets/img/spritemen.png'; ?>" class="img-responsive spritemen"  width="200" />
         <h1 id="chuj">SpriteKit</h1>
 
         <div id="p">
@@ -77,15 +77,12 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
                 <div class="col-md-4" style="margin-top:10px; margin-bottom:10px;">
                 <div style="position:relative; margin:auto;">
                     <div style="
-                    background:linear-gradient(
-                    rgba(0, 0, 0, 0.3), 
-                    rgba(0, 0, 0, 0.3)),
+                    background:
                     url('<?php echo get_the_post_thumbnail_url( $post = $post); ?>');
                     width:100%;
                     height:200px;
                     background-size: cover;
                     background-position:center;
-                    border: 1px solid #3f3f46;
                     ">
                 </div>
 		<a href="<?php the_permalink(); ?>" style="position:absolute; bottom:50%; display:block;  z-index:1000;" class="spritekit-link"><?php

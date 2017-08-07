@@ -20,7 +20,8 @@
 	<!-- chuuuuuuuuuuj -->
 	<script src="<?php echo get_template_directory_uri() . '/js/jquery-3.2.1.min.js'; ?>"></script>
 	<script src="<?php echo get_template_directory_uri() . '/js/bootstrap.js'; ?>"></script>
-	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
