@@ -3,6 +3,29 @@
 <?php get_header(); 
 global $post;
 ?>
+<style type="text/css" scoped>
+
+ .breadcrumb .rss {
+          color: rgba(0,0,0,0.8);
+        }
+
+        .breadcrumb a { color: rgba(255,59,48,1);
+        } 
+
+        .site-footer a{
+          color: rgba(255,59,48,1) !important;
+        }
+
+        a:hover {
+          color: rgba(255,59,48,0.5);
+        }
+
+        .my-projects {
+          background-color:rgba(255,59,48,1);
+          border-color:rgba(255,59,48,1);
+        }
+        
+    </style>
 <div class="container" style="max-width:900px; padding-left:0;padding-right:0; padding-top:50px;;">
 <!-- Nav tabs -->
 <ul class="nav nav-pils nav-justified" role="tablist">
@@ -10,13 +33,13 @@ global $post;
     <a class="nav-link active" data-toggle="tab" href="#Games" role="tab">Games</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Illustrations</a>
+    <a class="nav-link" data-toggle="tab" href="#illustrations" role="tab">Illustrations</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Themes</a>
+    <a class="nav-link" data-toggle="tab" href="#themes" role="tab">Themes</a>
   </li>
   <li class="nav-item ">
-    <a class="nav-link nav-last" data-toggle="tab" href="#settings" role="tab">Settings</a>
+    <a class="nav-link nav-last disabled" data-toggle="tab" href="#settings" role="tab">Soon...</a>
   </li>
 </ul>
 
@@ -26,7 +49,7 @@ global $post;
 <div class="row" style="margin:auto;">
             <?php 
             $args = array(
-                'category_name' => 'themes'
+                'category_name' => 'Games'
             );
             $myposts = get_posts($args);
             
@@ -67,8 +90,99 @@ global $post;
 </div>
 
   </div>
-  <div class="tab-pane" id="profile" role="tabpanel">Profiles</div>
-  <div class="tab-pane" id="messages" role="tabpanel">dupa</div>
+  <div class="tab-pane fade" id="illustrations" role="tabpanel">
+  
+  <div class="row" style="margin:auto;">
+            <?php 
+            $args = array(
+                'category_name' => 'Illustrations'
+            );
+            $myposts = get_posts($args);
+            
+            foreach ( $myposts as $post ) : setup_postdata( $post );
+            
+            ?>
+            
+                <div class="col-md-4" style="margin-top:10px; margin-bottom:10px;">
+                <div class style="position:relative; margin:auto;">
+                    <div style="
+                    background:
+    
+                    url('<?php echo get_the_post_thumbnail_url( $post = $post); ?>');
+                    width:100%;
+                    height:200px;
+                    background-size: cover;
+                    background-position:center;
+                    background-color:#fcfcfc;
+                    border-radius:2px;
+                    z-index:1;
+                    ">
+                </div>
+		<a href="<?php the_permalink(); ?>" class="spritekit-link"><?php
+        
+         
+         the_title(); 
+    
+         ?>
+            
+         </a>
+        </div>
+        </div>
+       
+	
+<?php
+ endforeach; 
+ ?>
+</div>
+  </div>
+
+  <div class="tab-pane fade" id="themes" role="tabpanel">
+
+      <div class="row" style="margin:auto;">
+            <?php 
+            $args = array(
+                'category_name' => 'Themes'
+            );
+            $myposts = get_posts($args);
+            
+            foreach ( $myposts as $post ) : setup_postdata( $post );
+            
+            ?>
+            
+                <div class="col-md-4" style="margin-top:10px; margin-bottom:10px;">
+                <div class style="position:relative; margin:auto;">
+                    <div style="
+                    background:
+    
+                    url('<?php echo get_the_post_thumbnail_url( $post = $post); ?>');
+                    width:100%;
+                    height:200px;
+                    background-size: cover;
+                    background-position:center;
+                    background-color:#fcfcfc;
+                    border-radius:2px;
+                    z-index:1;
+                    ">
+                </div>
+		<a href="<?php the_permalink(); ?>" class="spritekit-link"><?php
+        
+         
+         the_title(); 
+    
+         ?>
+            
+         </a>
+        </div>
+        </div>
+       
+	
+<?php
+ endforeach; 
+?>
+
+</div>
+<a href="https://github.com/kubamod"><img src="<?php echo get_template_directory_uri() . '/assets/img/github-logo.png'?>" style="max-width:200px; margin-left:auto; margin-right:auto; margin-top:40px; margin-bottom:40px; display:block; "/></a>
+  </div>
   <div class="tab-pane" id="settings" role="tabpanel">chuj</div>
 </div>
 </div>

@@ -70,7 +70,6 @@ endif;
 			) );
 		?>
 	</div><!-- .entry-content -->
-
 	<footer class="entry-footer">
 		<?php spritekit_v3_entry_footer(); ?>
 	</footer><!-- .entry-footer -->

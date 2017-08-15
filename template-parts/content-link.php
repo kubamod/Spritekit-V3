@@ -8,7 +8,13 @@
  */
 
 ?>
-
+<?php 
+	if(is_singular()):
+?>
+	<hr class="separator"></hr>
+<?php 
+	endif;
+?>
 <article id="post-<?php the_ID(); ?>" class="microblog" <?php post_class(); ?>>
 <div class="row">
 	<div class="col-2"><div style="background-image:url('<?php echo get_template_directory_uri().'/assets/img/avatar.jpg'; ?>');" alt="avatar Kuba Modrzejewski"  class="avatar"></div></div>
@@ -37,17 +43,27 @@
 </div>
 </article><!-- #post-## -->
 
+<?php 
+	if(is_singular()):
+?>
+	<hr class="separator"></hr>
+<?php 
+	endif;
+?>
 
 <?php 
  
-
- if (get_previous_post(true)) :
-	?>
-		<hr class="separator microblog-separator" style="margin-top:10px;margin-bottom:30px; border-color:rgba(0, 0, 0, 0)" ></hr>
-	<?php
-else :
-	 ?>
-	 	<hr class="separator"></hr>
-	 <?php
- endif;
+if(is_singular()):
+	//nothing here;
+else:
+	if (get_previous_post(true)) :
+		?>
+			<hr class="separator microblog-separator" style="margin-top:10px;margin-bottom:30px; border-color:rgba(0, 0, 0, 0)" ></hr>
+		<?php
+	else:
+		?>
+			<hr class="separator"></hr>
+		<?php
+	endif;
+endif;
 ?>

@@ -1,16 +1,20 @@
 
+
 <?php /* Template Name: SpriteKit-Home */ ?>
 <?php get_header(); 
+
 global $post;
 ?>
+
+
 <div class="container" style="max-width:900px; margin:auto;">
     <div class="spriteKit" >
 
         <img src="<?php echo get_template_directory_uri() . '/assets/img/spritemen.png'; ?>" class="img-responsive spritemen"  width="200" />
-        <h1 id="chuj">SpriteKit</h1>
+        <h1 id="chuj"><?php echo get_bloginfo(); ?></h1>
 
         <div id="p">
-            SpriteKit - to blog poświęcony tematyce gier wideo. <br />
+            <?php echo get_bloginfo(); ?> - to blog poświęcony tematyce gier wideo. <br />
             Z czego zbudowane, jak są zrobione i w jaki sposób działają. 
             Tutaj dowiesz się co to DirectX, OpenGL, Phaser, Cocos2d i inne technologie, z których korzysta się do tworzenia gier. 
             <br />Nie zabraknie również popularnych silników tj. Unity3D i Unreal Engine 4.
@@ -27,10 +31,10 @@ global $post;
         <div class="col-sm-8" style="margin-bottom:20px;">
             <ul class="links-my">
                 <li><h4>Gdzie mnie znajdziesz:</h4></li>
-                <li><a href="http://www.wykop.pl/ludzie/kubam1414/"><i class="material-icons">&#xE157;</i>Kody źródłowe projektów na GitHub</a></li>
+                <li><a href="https://github.com/kubamod"><i class="material-icons">&#xE157;</i>Kody źródłowe projektów na GitHub</a></li>
                 <li><a href="http://www.wykop.pl/ludzie/kubam1414/"><i class="material-icons">&#xE157;</i>Moje konto na Wykopie </a></li>
-                <li><a href="http://www.wykop.pl/ludzie/kubam1414/"><i class="material-icons">&#xE157;</i>Mój kochany twitter  </a></li>
-                <li><a href="http://www.wykop.pl/ludzie/kubam1414/"><i class="material-icons">&#xE157;</i>Kanał na Youtube</a></li>
+                <li><a href="https://twitter.com/modrzjwzky"><i class="material-icons">&#xE157;</i>Mój kochany twitter  </a></li>
+                <li><a href="https://www.youtube.com/channel/UCOj167hikCJiBiNfAc4gvSA?view_as=subscriber"><i class="material-icons">&#xE157;</i>Kanał na Youtube</a></li>
                 
             </ul>
             <br />
@@ -53,13 +57,15 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
         <div class="col-sm-4 ">
             <ul>
                 <li><h4>Forum dla deweloperów:</h4></li>
-                <li>Zadawaj pytania, znajduj odpowiedzi.<br /> Poznawaj ludzi i dyskutuj. <i class="material-icons forum-icon" >&#xE0BF;</i></li>
+                <li style="max-width:200px; display: inline-block;">Zadawaj pytania, znajduj odpowiedzi. Poznawaj ludzi i dyskutuj.</li>
+                <!-- <i class="material-icons forum-icon" >&#xE0BF;</i> -->
                 <li style="margin-top:10px;"><a href="#">Już wkrótce ></a></li>
-                
+           
             </ul> 
             
             
         </div>
+        
     </div>
     
    

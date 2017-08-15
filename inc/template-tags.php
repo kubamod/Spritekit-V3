@@ -55,14 +55,16 @@ function spritekit_v3_entry_footer() {
 			printf( '<span class="cat-links">Categories: ' . esc_html__( '%1$s', 'spritekit-v3' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
 
+	if (is_singular()):
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '#', esc_html_x( ' #', 'list item separator', 'spritekit-v3' ) );
 		if ( $tags_list ) {
 			/* translators: 1: list of tags. */
 			printf( '<br/><span class="tags-links"><span style="color:#000;">Tags: </span>' . esc_html__( '%1$s', 'spritekit-v3' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 		}
+	
+	endif;
 	}
-
 	
 
 	edit_post_link(
