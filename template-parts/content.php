@@ -12,9 +12,12 @@
 
 	
 
+</div>
+</div>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> style="<?php if (is_singular()) echo 'padding-left:0; padding-right:0;'; ?>">
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <?php 
+
 if (is_singular()) :
 ?>
 
@@ -22,7 +25,14 @@ if (is_singular()) :
 endif;
 ?>
 
-<div class="post">
+<div class="<?php 
+if (is_singular())
+{ 
+	echo 'post-full'; 
+} else {
+	echo 'post-container'; 
+}
+?>">
 	
 	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
     <img src="<?php echo $url; ?>" class="img-responsive content-image" style="margin:auto;" />
@@ -87,7 +97,9 @@ endif;
 	<div class="prev-links">
 		<div class="container" style="max-width:900px;">
 		<h3>Previous</h3>
-		<?php echo previous_post_link('%link'); ?>
+		<?php echo previous_post_link('%link');
+		
+		?>
 		</div>
 	</div>
 
@@ -101,7 +113,23 @@ endif;
 	*/
 	?>
 </div>
+<a href="#" class="newsletter-box">
+	<div class="singup-newsletter" style="background-image:url('<?php echo get_template_directory_uri() . '/assets/img/newsletter.png'  ?>')">
+
+		<div class="newsletter-copy" style="color: #ccc;">
+			Sign up for newsletter.<br/>
+			<span>Continue ></span>
+		</div>
+
+	</div>
+</a>
 	<h2 class="comments-h">Comments</h2>
+
+
+
+	
+
+	
 	<?php 
 	
 else:

@@ -3,29 +3,7 @@
 <?php get_header(); 
 global $post;
 ?>
-<style type="text/css" scoped>
 
- .breadcrumb .rss {
-          color: rgba(0,0,0,0.8);
-        }
-
-        .breadcrumb a { color: rgba(255,59,48,1);
-        } 
-
-        .site-footer a{
-          color: rgba(255,59,48,1) !important;
-        }
-
-        a:hover {
-          color: rgba(255,59,48,0.5);
-        }
-
-        .my-projects {
-          background-color:rgba(255,59,48,1);
-          border-color:rgba(255,59,48,1);
-        }
-        
-    </style>
 <div class="container" style="max-width:900px; padding-left:0;padding-right:0; padding-top:50px;;">
 <!-- Nav tabs -->
 <ul class="nav nav-pils nav-justified" role="tablist">

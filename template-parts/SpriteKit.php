@@ -81,8 +81,8 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
             ?>
             
                 <div class="col-md-4" style="margin-top:10px; margin-bottom:10px;">
-                <div style="position:relative; margin:auto;">
-                    <div style="
+                <div style="position:relative; margin:auto;" >
+                    <div class="SpriteKit-image" style="
                     background:
                     url('<?php echo get_the_post_thumbnail_url( $post = $post); ?>');
                     width:100%;

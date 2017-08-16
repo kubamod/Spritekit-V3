@@ -17,8 +17,7 @@
 ?>
 <article id="post-<?php the_ID(); ?>" class="microblog" <?php post_class(); ?>>
 <div class="row">
-	<div class="col-2"><div style="background-image:url('<?php echo get_template_directory_uri().'/assets/img/avatar.jpg'; ?>');" alt="avatar Kuba Modrzejewski"  class="avatar"></div></div>
-	<div class="col-10">
+	
 	<span class="microblog-time">
 
 	<a href="<?php the_permalink(); ?>"><?php the_time('m-j-y g:i A'); ?></span></a>
@@ -39,7 +38,6 @@
      
 
 	</div><!-- .entry-content -->
-</div><!-- .col-xs-8 -->
 </div>
 </article><!-- #post-## -->
 

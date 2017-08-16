@@ -177,6 +177,8 @@ add_filter( 'get_the_archive_title', function ($title) {
 
 });
 
+
+
 /**
  * Implement the Custom Header feature.
  */

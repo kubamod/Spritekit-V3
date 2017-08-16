@@ -17,61 +17,31 @@
 	<div class="cookies-info">
 		<div class="container" style="max-width:1024px;">
 			* Używamy informacji zapisanych za pomocą cookies i podobnych technologii m.in. w celach reklamowych i statystycznych oraz w celu dostosowania naszych serwisów do indywidualnych potrzeb użytkowników. Mogą też stosować je współpracujący z nami reklamodawcy, firmy badawcze oraz dostawcy aplikacji multimedialnych. W programie służącym do obsługi internetu można zmienić ustawienia dotyczące cookies.Korzystanie z naszych serwisów internetowych bez zmiany ustawień dotyczących cookies oznacza, że będą one zapisane w pamięci urządzenia.
-		<hr style="margin-top:4px;margin-bottom:4px; margin-top:10px;"/>
+		<hr style="margin-top:4px;margin-bottom:15px; margin-top:15px;"/>
 		</div>
 	</div>
 	
 
 		<div class="site-info container" style="max-width:1024px; margin:auto;">
 		<?php if (is_single() || is_page() || is_category()): ?>
-			<div class="breadcrumb-footer"><img src="<?php echo get_template_directory_uri().'/assets/img/logo3.png'; ?>" width="20" alt="logo"/><?php get_breadcrumb(); ?></div>
+			<div class="breadcrumb-footer"><img src="<?php echo get_template_directory_uri().'/assets/img/spritemen2.png'; ?>" width="20" style=" opacity: 0.8;
+	filter: alpha(opacity=80);" alt="logo"/><?php get_breadcrumb(); ?></div>
+	<hr />
 		<?php endif; ?>	
-			<div class="row">
-				<div class="col-sm">
-					<ul>
-					<li class="strong-li">Blog</li>
-					<li><a href="">Microblog</a></li>
-					<li><a href="">Photography</a></li>
-					<li><a href="">microblog</a></li>
-					<li><a href="">microblog</a></li>
-					<li><a href="">microblog</a></li>
-					</ul>
-				</div>
-				<div class="col-sm"><ul>
-					<li class="strong-li">Dupa i chuj</li>
-					<li>tesdg</li>
-					<li>dsagadsg</li>
-					<li>vsdav</li>
-					<li>vsdav</li>
-					</ul></div>
-				<div class="col-sm"><ul>
-					<li class="strong-li">Dupa i chuj</li>
-					<li>tesdg</li>
-					<li>dsagadsg</li>
-					<li>vsdav</li>
-					
-					</ul></div>
-				<div class="col-sm"><ul>
-					<li class="strong-li">Dupa i chuj</li>
-					<li>tesdg</li>
-					<li>dsagadsg</li>
-					
-					</ul></div>
-			</div>
-
+		
 			<div style="margin-top:20px; color:#888;">Don't steal my shit please</div>
-			<hr style="margin-top:4px;margin-bottom:4px;"/>
+			
 			<div class="copy row">
 				<div class="col-sm-5">
 				Copyright © 2017 <?php echo get_bloginfo(); ?>. All rights reserved.
 				</div>
-				<div class="col-sm">
+				<div class="col-sm-7">
 					<a href="">Privacy Policy</a>
-				</div>
-				<div class="col-sm">
+
+
 					<a href="">Site Map</a>
-				</div>
-				<div class="col-sm">
+
+
 					<a href="">Contact</a>
 				</div>
 			</div>

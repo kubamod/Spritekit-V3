@@ -27,7 +27,8 @@ a {
 }
 
 a:hover {
-	text-decoration: none;
+	text-decoration: underline;
+	color: rgba(0, 122, 255, 1);
 }
 
 body {
@@ -251,6 +252,10 @@ select {
 	font-size: 26px;
 }
 
+.entry-title a:hover {
+	text-decoration: none;
+}
+
 .entry-title {
 	font-size: 26px;
 	margin-bottom: 0;
@@ -261,13 +266,29 @@ select {
 	border-bottom: 2px solid rgba(0, 0, 0, 1);
 }
 
-.post {
-	max-width: 950px;
+.post-full {
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 16px !important;
+	font-size: 17px !important;
+	color: #333;
 	line-height: 29px;
 	font-weight: normal !important;
+	box-sizing: content-box;
+}
+
+.post-container {
+	max-width: 1020px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 17px !important;
+	color: #333;
+	line-height: 29px;
+	font-weight: normal !important;
+}
+
+.p-image {
+	width: 100%;
 }
 
 .ad-header {
@@ -282,14 +303,46 @@ select {
 	margin-right: auto;
 }
 
-.post p {
-	color: rgba(0, 0, 0, 0.8);
+.heateor_sss_sharing_container {
+	margin-top:20px;
+	max-width: 650px;
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+
+
+.post-container p, .post-full p {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.img-left {
+	float: left;
+	margin-left: -40px;
+	margin-right: 10px;
+}
+
+.full-post p {
+	max-width: 650px;
+	margin: auto;
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+
+.full-post h1, h2, h3, h4, h5 ,h6 {
+	max-width: 650px;
 	margin: auto;
 }
 
-.full-post {
+.entry-header {
+
 	max-width: 650px;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
 }
 
 .entry-meta {
@@ -300,6 +353,10 @@ select {
 }
 
 .entry-footer {
+	max-width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 40px;
 	font-size: 14px;
 	margin-top: 10px;
 }
@@ -320,11 +377,13 @@ select {
 }
 .content-image {
 	border-radius: 4px;
-	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	display:block;
+
 }
+
+
 
 .img-responsive {
 	max-width: 100%;
@@ -342,7 +401,6 @@ select {
 .breadcrumb {
     font-size: 16px;
 	margin-bottom: 20px;
-	max-width: 910px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 40px;	
@@ -388,29 +446,33 @@ select {
 }
 
 #disqus_thread {
-	max-width: 600px;
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 650px;
 	min-height: 100px;
 	margin: auto;
 	margin-bottom: 100px;
 }
 
+
+
 .status {
-	max-width: 500px;
 	min-height: 50px;
-	background-color: none;
-	border: 1px solid rgba(255,59,48,1);
+	max-width: 950px;
+	background-color: #ff365d;
+	border: 1px solid #ff365d
 	padding: 0;
-	color: rgba(255,59,48,1);
+	color: #fff;
 	text-align: center;
 	font-size: 18px;
 	line-height: 50px;
-	border-radius: 4px;
+	border-radius: 6px;
 	margin: auto;
 	
 }
 
 .status a {
-	color: rgba(255,59,48,1);
+	color: #fff;
 }
 
 .status p {
@@ -418,9 +480,7 @@ select {
 }
 
 .status a:hover {
-	background-color: rgba(0, 122, 255, 1);
-	color: #fff;
-	border-radius: 4px;
+	text-decoration: underline;
 }
 
 .tags-links {
@@ -520,6 +580,13 @@ code {
 	color: #888;
 }
 
+.copy .col-sm-7 a{
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+	padding-right: 10px;
+	padding-left: 10px;
+	float: right;
+}
+
 .site-footer a:hover {
 	text-decoration: underline;
 }
@@ -551,12 +618,13 @@ code {
 }
 
 blockquote {
-	max-width: 700px;
+	margin: 0 0 0 10px;
+	padding: 0 30px 0 10px;
+	overflow: hidden;
+	max-width: 600px;
 	margin: auto;
-	font-size: 16px;
-	font-style: italic;
-	margin-bottom: 10px;
-	color: rgba(0, 0, 0, 0.6);
+	font: italic 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	color: #666;
 }
 
 .page-title {
@@ -564,7 +632,7 @@ blockquote {
 }
 
 .microblog {
-	max-width: 500px;
+	max-width: 550px;
 	margin-left: auto;
 	margin-right: auto;
 	min-height: 90px;
@@ -634,6 +702,68 @@ article {
 .page-title {
 	display: none;
 }
+
+
+.singup-newsletter {
+	background-color: #222222;
+	max-width: 980px;
+	height: 250px;
+	background-size: 980px 250px;
+	background-repeat: no-repeat;
+	margin: auto;
+	transition: 0.2s;
+}
+
+.newsletter-copy {
+	margin-left: 242px;
+	top: 115px;
+	position: relative;
+}
+
+.newsletter-box:hover {
+	text-decoration: none;
+}
+.singup-newsletter:hover {
+	box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.4);
+}
+
+.newsletter-copy span {
+	color: rgba(0, 122, 255, 1);
+	
+}
+
+.newsletter-copy span:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 575px) {
+	.site-footer ul a {
+		height: 30px;
+		display: block;
+		font-size: 16px;
+		text-align: center;
+		line-height: 30px;
+		border-top: 0.5px solid rgba(0, 0, 0, 0.1);
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.site-footer .strong-li {
+		text-align: center;
+		display: block;
+		height: 30px;
+		margin-top: 10px;
+		line-height: 30px;
+		font-size: 18px;
+	}
+
+	.img-left {
+		margin-left: 0px;
+	}
+}
+
+
+
 
 /* ######################## SPRITEKITT-HOME ############################# */
 
@@ -800,32 +930,35 @@ ul.links-my li {
 	padding-right: 5px;
 	color: #fff;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-
-
 	display: block;
 }
 
 .spritekit-link:hover {
-	color:#000;
-
-	
+	color:#000;	
 }
 
 .prev-links {
 	min-height: 200px;
 	background-color: rgba(0, 0, 0, 0.05);
-	padding-top: 50px;
+	padding-top: 85px;
+	max-width: 980px;
+	margin-left: auto;
+	margin-right: auto;
 	padding-bottom: 80px;
-	margin-top: 20px;
+	margin-top: 100px;
 	margin-bottom: 20px;
-
+	transition: 0.5s;
 }
+
+.prev-links:hover {
+	box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.4);
+ }
 
 .prev-links h3 {
 	text-align: center;
 	font-size: 16px;
 	font-weight: 300;
-	color: rgba(0, 0, 0, 0.3);
+	color: #ccc;
 
 }
 
@@ -835,6 +968,10 @@ ul.links-my li {
 	text-align: center;
 	font-size: 36px;
 	font-weight: 200;
+}
+
+.prev-links a:hover {
+	text-decoration: none;
 }
 
 /* ################### ABOUT ME ##################################### */
@@ -850,3 +987,5 @@ ul.links-my li {
     background-repeat: no-repeat;
     background-size: cover;
     }
+
+
