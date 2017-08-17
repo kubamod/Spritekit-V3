@@ -53,5 +53,6 @@
 		</div>
 	</header><!-- #masthead -->
 
-<div class="container"> 	
+<div class="container" style="height:40px;"> 	
 <div class="breadcrumb"><?php get_breadcrumb(); ?><a class="rss" href="<?php echo esc_url( home_url( '/?feed=rss' ) ); ?>">RSS</a></div>
+</div>

@@ -12,8 +12,7 @@
 
 	
 
-</div>
-</div>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> style="<?php if (is_singular()) echo 'padding-left:0; padding-right:0;'; ?>">
 
 <?php 
@@ -36,7 +35,7 @@ if (is_singular())
 	
 	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
     <img src="<?php echo $url; ?>" class="img-responsive content-image" style="margin:auto;" />
-		<div class="full-post">
+		<div class="full-post" style="<?php if (is_singular()) echo 'padding-left:20px; padding-right:20px;'; ?>">
 	<header class="entry-header">
 		
 		<?php
@@ -123,7 +122,7 @@ if (is_singular())
 
 	</div>
 </a>
-	<h2 class="comments-h">Comments</h2>
+	<h2 class="comments-h" >Comments</h2>
 
 
 
