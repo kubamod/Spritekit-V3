@@ -112,16 +112,25 @@ if (is_singular())
 	*/
 	?>
 </div>
-<a href="#" class="newsletter-box">
+
 	<div class="singup-newsletter" style="background-image:url('<?php echo get_template_directory_uri() . '/assets/img/newsletter.png'  ?>')">
 
 		<div class="newsletter-copy" style="color: #ccc;">
 			Sign up for newsletter.<br/>
-			<span>Continue ></span>
+			<div class="tnp tnp-subscription">
+				<form action="<?php echo site_url(); ?>" method="post">
+				<div class="tnp-field tnp-field-email">
+					<input type="email" class="tnp-email" name="ne" value="" required placeholder="email">
+				</div>
+				<div class="tnp-field tnp-field-submit">
+					<input type="submit" class="tnp-submit" value="Continue >">
+				</div>
+				</form>
+				</div>
 		</div>
 
 	</div>
-</a>
+
 	<h2 class="comments-h" >Comments</h2>
 
 
