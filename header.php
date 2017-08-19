@@ -34,18 +34,19 @@
 <body <?php body_class(); ?>>
 
 	<header id="masthead" class="site-header">
-		<div class="container">
+		<div class="container" style="max-width:1020px;">
 		
 			
 		
 
-		<nav id="site-navigation" class="main-navigation">
+		<nav id="site-navigation" class="main-navigation ">
 			
-			<a href="<?php echo esc_url( home_url( '/Blog' ) ); ?>" style="padding-left:0;"><img src="<?php echo get_template_directory_uri().'/assets/img/logo3.png'; ?>" width="35"  alt="logo" class="logo "/><span class="blog-info"><?php echo get_bloginfo(); ?></span></a>
 			<?php
 				wp_nav_menu( array(
+					
 					'theme_location' => 'menu-1',
 					'menu_id'        => 'primary-menu',
+					'menu_class'     => 'nav nav-pills nav-justified',
 				) );
 ?>
 		</nav><!-- #site-navigation -->
@@ -56,3 +57,6 @@
 <div class="container" style="height:40px;"> 	
 <div class="breadcrumb"><?php get_breadcrumb(); ?><a class="rss" href="<?php echo esc_url( home_url( '/?feed=rss' ) ); ?>">RSS</a></div>
 </div>
+
+<!-- 
+			<a href="<?php echo esc_url( home_url() ); ?>" style="padding-left:0;"><img src="<?php echo get_template_directory_uri().'/assets/img/logo3.png'; ?>" width="35"  alt="logo" class="logo "/><span class="blog-info"><?php echo get_bloginfo(); ?></span></a> -->

@@ -177,9 +177,15 @@ add_filter( 'get_the_archive_title', function ($title) {
 
 });
 
-
+add_filter('wp_nav_menu_items','add_new_menu_item', 10, 2);
+function add_new_menu_item( $nav, $args ) {
+    $newmenuitem = '<li class="home-link"><img src='.get_template_directory_uri().'/assets/img/logo3.png width="35" /></li>';
+    $nav = $newmenuitem.$nav;
+    return $nav;
+}
 
 /**
+/assets/img/logo3.png
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';

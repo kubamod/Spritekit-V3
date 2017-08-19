@@ -6,18 +6,13 @@ global $post;
 
 <style scoped>
 body { 
-  background: url('<?php echo get_template_directory_uri() . '/assets/img/tratat.jpg'; ?>') no-repeat center center fixed !important; 
-  -webkit-background-size: cover !important;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color:#191919;
   color:#fff !important;
 }
 
 .site-header {
     background-color:rgba(0,0,0,0.0);
     border-bottom: none;
-    top:0px;
     color:#fff;
     -webkit-backdrop-filter: blur(0px);
 }
@@ -36,25 +31,22 @@ body {
     display:none;
 }
 
-.stuff {
-    position: relative;
-    bottom:-50%;
-    width:500px;
+.blog-info {
+    color:#fff;
 }
 
-.my-auto {
-    margin-top: auto !important;
-    margin-bottom: auto !important;
+.stuff {
+    margin-top:100px;
+}
+
+.stuff p{
+    max-width:650px;
+    margin:auto;
 }
 
 .site-footer {
+    margin-top:100px;
     color:#fff;
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    padding: 1rem;
-    text-align: center;
 }
 
 
