@@ -16,7 +16,7 @@
 	<footer id="colophon" class="site-footer">
 	<div class="cookies-info">
 		<div class="container" style="max-width:1024px;">
-			* Używamy informacji zapisanych za pomocą cookies i podobnych technologii m.in. w celach reklamowych i statystycznych oraz w celu dostosowania naszych serwisów do indywidualnych potrzeb użytkowników. Mogą też stosować je współpracujący z nami reklamodawcy, firmy badawcze oraz dostawcy aplikacji multimedialnych. W programie służącym do obsługi internetu można zmienić ustawienia dotyczące cookies.Korzystanie z naszych serwisów internetowych bez zmiany ustawień dotyczących cookies oznacza, że będą one zapisane w pamięci urządzenia.
+			* We are using data saved in cookies to advertisements and statistic purposes as well as individual users needs.  Collaborating companies may also use them. If you want you can change cookies settings in your web browser and disable them, however, using our site signifies you are accepting to save them in memory of your device.
 		<hr style="margin-top:4px;margin-bottom:15px; margin-top:15px;"/>
 		</div>
 	</div>
@@ -29,17 +29,17 @@
 	<hr />
 		<?php endif; ?>	
 		
-			<div style="margin-top:20px; color:#888;">Don't steal my shit please</div>
+			<div style=" color:#888;">Don't steal my shit please</div>
 			
 			<div class="copy row">
 				<div class="col-sm-5">
 				Copyright © 2017 <?php echo get_bloginfo(); ?>. All rights reserved.
 				</div>
 				<div class="col-sm-7">
-					<a href="">Privacy Policy</a>
+					<a href="">Twitter</a>
 
 
-					<a href="">Site Map</a>
+					<a href="">Instagram</a>
 
 
 					<a href="">Contact</a>

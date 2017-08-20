@@ -117,16 +117,7 @@ if (is_singular())
 
 		<div class="newsletter-copy" style="color: #ccc;">
 			Sign up for newsletter.<br/>
-			<div class="tnp tnp-subscription">
-				<form action="<?php echo site_url(); ?>" method="post">
-				<div class="tnp-field tnp-field-email">
-					<input type="email" class="tnp-email" name="ne" value="" required placeholder="email">
-				</div>
-				<div class="tnp-field tnp-field-submit">
-					<input type="submit" class="tnp-submit" value="Continue >">
-				</div>
-				</form>
-				</div>
+			<a href="#">Continue ></a>
 		</div>
 
 	</div>

@@ -50,15 +50,14 @@ get_header(); ?>
 
 		endif; ?>
 
-<div class="pagination">
-				<?php echo paginate_links(); ?> <br />
-				<div class="ad-header"></div>
-                <img src="<?php echo get_template_directory_uri() . '/assets/img/spaceX.png'; ?>" style="margin-bottom:20px;margin-top:40px;" width="100" />
-                </div>
+		<div class="pagination">
+			<?php echo paginate_links(); ?> <br />
+			<div class="ad-header"></div>
+		</div>
 		</main><!-- #main -->
 		
-	</div><!-- #primary -->
-
+</div><!-- #primary -->
+	<img src="<?php echo get_template_directory_uri() . '/assets/img/Siri.png'; ?>"  class="siri-pagination" width="400" />
 <?php
 
 get_footer();

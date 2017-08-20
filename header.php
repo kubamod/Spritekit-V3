@@ -31,10 +31,12 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-
+<body <?php body_class();  ?>>
+<a href="<?php echo get_home_url(); ?>">
+	<img src="<?php echo get_template_directory_uri() . '/assets/img/SiriVoice.png'; ?>" width="400" class="logo" alt="logo" />
+</a>
 	<header id="masthead" class="site-header">
-		<div class="container" style="max-width:1020px;">
+		<div class="container" style="max-width:1020px; padding: 0;">
 		
 			
 		
@@ -54,7 +56,7 @@
 		</div>
 	</header><!-- #masthead -->
 
-<div class="container" style="height:40px;"> 	
+<div class="container-fluid breadcrumb-full" style="padding-left:0; padding-right:0;"> 	
 <div class="breadcrumb"><?php get_breadcrumb(); ?><a class="rss" href="<?php echo esc_url( home_url( '/?feed=rss' ) ); ?>">RSS</a></div>
 </div>
 
