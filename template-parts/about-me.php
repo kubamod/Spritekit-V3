@@ -31,6 +31,10 @@ body {
     display:none;
 }
 
+.breadcrumb-footer {
+    color: #fff;
+}
+
 .blog-info {
     color:#fff;
 }
@@ -62,20 +66,7 @@ body {
 </div>
 
 <script>
-$(updateBoxDimension);
-$(window).on('resize', updateBoxDimension);
-
-function updateBoxDimension() {
-    var $box = $('.box');
-
-    // To center the box
-    var boxLeft = ($(window).width()) / 2 - ($box.width() / 2),
-        boxTop = ($(window).height()) / 2 - ($box.height() / 2);
-
-    $box.css({
-        left: boxLeft,
-        top: boxTop
-    });
-}
+$(".logo").attr("src","<?php echo get_template_directory_uri() . '/assets/img/SiriVoice-whtie.png' ?>");
 </script>
-<?php get_footer(); ?>
+<?php get_footer(); 
+?>

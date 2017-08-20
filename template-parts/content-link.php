@@ -51,11 +51,16 @@
 
 <?php 
  
+
+ 
 if(is_singular()):
 	//nothing here;
 else:
-	if (get_previous_post(true)) :
+	
+	if (get_previous_post(true)):
+		
 		?>
+
 			<hr class="separator microblog-separator" style="margin-top:10px;margin-bottom:30px; border-color:rgba(0, 0, 0, 0)" ></hr>
 		<?php
 	else:

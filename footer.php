@@ -36,13 +36,13 @@
 				Copyright © 2017 <?php echo get_bloginfo(); ?>. All rights reserved.
 				</div>
 				<div class="col-sm-7">
-					<a href="">Twitter</a>
+					<a href="https://twitter.com/modrzjwzki">Twitter</a>
 
 
-					<a href="">Instagram</a>
+					<a href="https://www.instagram.com/modrzjwzki/">Instagram</a>
 
 
-					<a href="">Contact</a>
+					<a href="<?php echo get_home_url() . '/about-me' ?>">Contact</a>
 				</div>
 			</div>
 		</div><!-- .site-info -->
@@ -52,7 +52,18 @@
 $( "a:contains('My projects')" ).addClass("my-projects");
 $( ".breadcrumb-footer a:contains('Home')" ).empty();
 
+
+
+
 </script>
+
+<?php
+if (is_singular()) {
+	if (has_post_thumbnail()):
+		echo "<script>document.getElementById('content-image').scrollIntoView();</script>";
+	endif;
+}
+?>
 <?php wp_footer(); ?>
 
 </body>

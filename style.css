@@ -62,7 +62,7 @@ body {
 	margin-right: auto;
 	border-radius: 4px;
 	-webkit-backdrop-filter: blur(20px);
-	border:1px solid rgba(0, 122, 255, 1);
+	/* border:1px solid rgba(0, 122, 255, 1); */
 	line-height: 29px;
 	border-radius: 4px;
 	margin-bottom: 20px;
@@ -70,20 +70,29 @@ body {
 }
 
 .site-header a {
-	color: rgba(0, 122, 255, 1);
+	color: rgba(0, 0, 0, 0.6);
 	font-size: 15px;
+	width: 100%;
+	display: block;
 }
+.site-header a:hover  {
+	color: #fff !important; 
+	text-decoration: none;
+	background-color: rgba(0, 0, 0, 0.8);
+	
+}
+
 
 .nav-left {
 	border-left:none;
 }
 
 .nav-right {
-	border-right: none !important;
+	border-right:none;
 }
 
 .nav-item {
-	 border-right:1px solid rgba(0, 122, 255, 1);
+	 /*border-right:1px solid rgba(0, 122, 255, 1); */
 	height: 30px !important;
 }
 
@@ -125,22 +134,15 @@ select {
 	padding-left: 0;
 }
 
-
 #primary-menu {
 	max-width: 1024px !important;
 	margin: auto;
 }
 
-
-
-
-
-
-
 .logo {
 	display: block;
 	margin: auto;
-	margin-top: 40px;
+
 
 }
 
@@ -413,7 +415,10 @@ select {
 
 }
 
-
+.entry-summary {
+	max-width: 650px;
+	margin: auto;
+}
 
 .page-title {
 	text-align: center;
@@ -451,7 +456,7 @@ select {
 #disqus_thread {
 	padding-left: 20px;
 	padding-right: 20px;
-	max-width: 650px;
+	max-width: 800px;
 	min-height: 100px;
 	margin: auto;
 	margin-bottom: 100px;
@@ -700,6 +705,8 @@ blockquote {
 
 .no-results .page-content {
 	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 article {
@@ -799,6 +806,11 @@ article {
 	}
 
 	.entry-content-aside {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.padding-article {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
@@ -1076,3 +1088,52 @@ ul.links-my li {
 	margin-left: 10px !important;
 	font-size: 15px !important;
 }
+
+/* ###################### SEARCH FORM ####################### */
+
+.search-form label .screen-reader-text{
+	display:none;
+	
+}
+
+.search-form {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 120px;
+}
+
+.search-field {
+	display: block;
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	height: 40px;
+	padding-left: 20px;
+	border-radius: 4px;
+}
+
+.search-form label {
+	max-width: 700px;
+	display: block;
+}
+
+.search-submit {
+	height: 40px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	color: rgba(0, 122, 255, 1);
+	border:none;
+
+}
+
+.search-submi:hover {
+	cursor: pointer;
+}
+
+.nothing-found {
+	margin-top: 70px;
+	margin-bottom: 20px;
+}
+
+input,textarea{width:100%;display:block}

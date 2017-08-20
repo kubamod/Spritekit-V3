@@ -9,9 +9,15 @@
 
 ?>
 
+<style>
+.breadcrumb {
+	display:none;
+}
+</style>
+
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'spritekit-v3' ); ?></h1>
+		<h1 class="page-title nothing-found"><?php esc_html_e( 'Nothing Found', 'spritekit-v3' ); ?></h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">

@@ -15,7 +15,8 @@
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php spritekit_v3_posted_on(); ?>
+		<span class="time"><?php the_time('M d, Y');  ?></span>
+		<a target="_blank"  href="https://twitter.com/modrzjwzky?lang=pl">@<?php the_author() ?></a>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->

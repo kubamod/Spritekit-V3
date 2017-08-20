@@ -60,7 +60,7 @@ function spritekit_v3_entry_footer() {
 		$tags_list = get_the_tag_list( '#', esc_html_x( ' #', 'list item separator', 'spritekit-v3' ) );
 		if ( $tags_list ) {
 			/* translators: 1: list of tags. */
-			printf( '<br/><span class="tags-links"><span style="color:#000;">Tags: </span>' . esc_html__( '%1$s', 'spritekit-v3' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			printf( '<br/><span class="tags-links"><span>Tags: </span>' . esc_html__( '%1$s', 'spritekit-v3' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 		}
 	
 	endif;

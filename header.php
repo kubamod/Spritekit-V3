@@ -33,7 +33,7 @@
 
 <body <?php body_class();  ?>>
 <a href="<?php echo get_home_url(); ?>">
-	<img src="<?php echo get_template_directory_uri() . '/assets/img/SiriVoice.png'; ?>" width="400" class="logo" alt="logo" />
+	<img src="<?php echo get_template_directory_uri() . '/assets/img/SiriVoice.png'; ?>" width="500" class="logo" alt="logo" />
 </a>
 	<header id="masthead" class="site-header">
 		<div class="container" style="max-width:1020px; padding: 0;">

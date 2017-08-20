@@ -34,8 +34,8 @@ if (is_singular())
 ?>">
 	
 	<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
-    <img src="<?php echo $url; ?>" class="img-responsive content-image" style="margin:auto;" />
-		<div class="full-post" style="<?php if (is_singular()) echo 'padding-left:20px; padding-right:20px;'; ?>">
+    <img src="<?php echo $url; ?>" class="img-responsive content-image" style="margin:auto;" id="content-image"/>
+		<div class="full-post <?php if (is_singular()) echo 'padding-article'; ?>" style="">
 	<header class="entry-header">
 		
 		<?php
@@ -138,6 +138,8 @@ else:
 <?php
 endif;
 ?>
+
+
 
 
 
