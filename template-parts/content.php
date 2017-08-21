@@ -9,20 +9,7 @@
 
 ?>
 
-
-	
-
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> style="<?php if (is_singular()) echo 'padding-left:0; padding-right:0;'; ?>">
-
-<?php 
-
-if (is_singular()) :
-?>
-
-<?php
-endif;
-?>
 
 <div class="<?php 
 if (is_singular())
@@ -117,7 +104,7 @@ if (is_singular())
 
 		<div class="newsletter-copy" style="color: #ccc;">
 			Sign up for newsletter.<br/>
-			<a href="#">Continue ></a>
+			<span href="#">Continue ></span>
 		</div>
 
 	</div>

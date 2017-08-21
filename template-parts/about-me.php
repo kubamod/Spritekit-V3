@@ -59,8 +59,14 @@ body {
 <div class="container-fluid">
     <div class="h-100">
         <div class="stuff" id="box">
-            <h3>Hi, it's me.</h3>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis velit sed tellus fringilla laoreet. Maecenas vitae porta nibh. Donec suscipit mattis arcu, eget tempor nulla laoreet molestie. Suspendisse in elit volutpat, pretium ipsum vestibulum, consequat eros. Donec in blandit velit. Nunc quam nibh, mattis sed tincidunt et, dignissim quis magna. Aenean in mauris malesuada erat scelerisque venenatis nec eu leo. Duis at lacus egestas, tincidunt risus nec, varius turpis. Vivamus tempus, libero id laoreet feugiat, nibh tortor volutpat nulla, vel congue augue erat vel ex. Morbi tempus augue vitae tellus euismod mattis. Aliquam erat volutpat. In et urna quis est suscipit ornare id sed tellus. Mauris euismod viverra odio non rhoncus. Aenean at vestibulum felis. Etiam at tellus ac urna feugiat bibendum.</p>
+        <?php
+        the_content();
+        
+                    wp_link_pages( array(
+                        'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'spritekit-v3' ),
+                        'after'  => '</div>',
+                    ) );
+        ?>
         </div>
     </div>
 </div>

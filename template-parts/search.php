@@ -33,6 +33,7 @@ if(is_search()) {
 					printf( esc_html__( 'Search Results for: %s', 'spritekit-v3' ), '<span>' . get_search_query() . '</span>' );
 				?></h1>
 			</header><!-- .page-header -->
+			
 
 			<?php
 			/* Start the Loop */

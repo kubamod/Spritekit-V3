@@ -41,7 +41,7 @@ body {
 }
 
 .sticky-wrapper {
-	z-index: 10000 !important;
+	z-index: 100000 !important;
 }
 
 .presentation {
@@ -49,10 +49,6 @@ body {
 	background-color: #101010;
 }
 
-.is-sticky .site-header {
-	margin-top: 0;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
 
 .site-header {
 	position: relative;
@@ -70,7 +66,7 @@ body {
 }
 
 .site-header a {
-	color: rgba(0, 0, 0, 0.6);
+	color: rgba(0, 0, 0, 0.8);
 	font-size: 15px;
 	width: 100%;
 	display: block;
@@ -140,8 +136,10 @@ select {
 }
 
 .logo {
+	margin-top: 20px;
 	display: block;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 
 
 }
@@ -382,8 +380,8 @@ select {
 .separator {
 	max-width: 150px;
 	border-color: rgba(0, 0, 0, 0.2);
-	margin-top: 100px;
-	margin-bottom:100px;
+	margin-top: 80px;
+	margin-bottom:80px;
 }
 
 .content-area {
@@ -412,6 +410,7 @@ select {
 
 .entry-content {
 	color: rgba(0, 0, 0, 0.75);
+	font-size: 18px;
 
 }
 
@@ -654,6 +653,9 @@ blockquote {
 	padding-left: 20px;
 	padding-right: 20px;
 }
+.microblog p {
+	min-width: 400px;
+}
 
 .entry-content-microblog {
 	display: block;
@@ -722,6 +724,7 @@ article {
 	background-repeat: no-repeat;
 	margin: auto;
 	transition: 0.2s;
+	cursor: no-drop;
 }
 
 .newsletter-copy {
@@ -732,6 +735,7 @@ article {
 
 .newsletter-box:hover {
 	text-decoration: none;
+	
 }
 .singup-newsletter:hover {
 	box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.2);
@@ -739,6 +743,7 @@ article {
 
 .newsletter-copy span {
 	color: rgba(0, 122, 255, 1);
+	cursor: no-drop;
 	
 }
 
@@ -1097,7 +1102,7 @@ ul.links-my li {
 }
 
 .search-form {
-	max-width: 700px;
+	max-width: 650px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 120px;
@@ -1108,9 +1113,26 @@ ul.links-my li {
 	width: 100%;
 	background-color: #fff;
 	border: 1px solid #ccc;
-	height: 40px;
-	padding-left: 20px;
-	border-radius: 4px;
+	height: 50px;
+	font-size: 16px;
+	background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position: 10px 10px;
+	padding-left: 50px;
+	font-size: 22px;
+	font-weight: 300;
+	padding-bottom: 0px;
+	border-radius: 2px;
+}
+
+.search-field:placeholder {
+	font-weight: 300;
+}
+
+.search-field:focus {
+	outline:none !important;
 }
 
 .search-form label {
@@ -1124,6 +1146,9 @@ ul.links-my li {
 	border: 1px solid #ccc;
 	color: rgba(0, 122, 255, 1);
 	border:none;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 
 }
 

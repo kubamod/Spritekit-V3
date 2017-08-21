@@ -20,14 +20,7 @@
 	<!-- chuuuuuuuuuuj -->
 	<script src="<?php echo get_template_directory_uri() . '/js/jquery-3.2.1.min.js'; ?>"></script>
 	<script src="<?php echo get_template_directory_uri() . '/js/bootstrap.js'; ?>"></script>
-	<!--<script src="<?php echo get_template_directory_uri() . '/js/jquery.sticky.js'; ?>"></script> -->
-	<script>
-		$(document).ready(function(){
-			$(".site-header").sticky({topSpacing:0});
-		});
-	</script>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -57,7 +50,7 @@
 	</header><!-- #masthead -->
 
 <div class="container-fluid breadcrumb-full" style="padding-left:0; padding-right:0;"> 	
-<div class="breadcrumb"><?php get_breadcrumb(); ?><a class="rss" href="<?php echo esc_url( home_url( '/?feed=rss' ) ); ?>">RSS</a></div>
+<!-- <div class="breadcrumb"><?php get_breadcrumb(); ?><a class="rss" href="<?php echo esc_url( home_url( '/?feed=rss' ) ); ?>">RSS</a></div> -->
 </div>
 
 <!-- 

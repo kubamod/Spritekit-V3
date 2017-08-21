@@ -52,8 +52,7 @@
 $( "a:contains('My projects')" ).addClass("my-projects");
 $( ".breadcrumb-footer a:contains('Home')" ).empty();
 
-
-
+	$('.search-field').attr("placeholder", "Type here");
 
 </script>
 
