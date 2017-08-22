@@ -1,10 +1,10 @@
 /*
-Theme Name: SpriteKit v3
-Theme URI: siecioweabc.pl
-Author: Kuba Modrzeje2wski
-Author URI: siecioweabc.pl
+Theme Name: Siri Voice
+Theme URI: Sirivoice.net
+Author: Kuba Modrzejewski
+Author URI: Sirivoice.net
 Description: No description
-Version: 1.0.0
+Version: 1.0.1
 License: Copyright
 Text Domain: spritekit-v3
 Tags: custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -76,6 +76,11 @@ body {
 	text-decoration: none;
 	background-color: rgba(0, 0, 0, 0.8);
 	
+}
+
+.responsiveSelectContainer {
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 
@@ -653,9 +658,7 @@ blockquote {
 	padding-left: 20px;
 	padding-right: 20px;
 }
-.microblog p {
-	min-width: 400px;
-}
+
 
 .entry-content-microblog {
 	display: block;
@@ -790,6 +793,8 @@ article {
 
 	.img-left {
 		margin-left: 0px;
+		float: none !important;
+
 	}
 
 	.singup-newsletter {
@@ -822,7 +827,21 @@ article {
 
 }
 
+@media (max-width: 414px) { 
+	
+	.newsletter-copy {
+		margin-left: 70px;
+	}
 
+	.singup-newsletter {
+		background-color: #222222;
+		max-width: 980px;
+		height: 250px;
+		background-position-x: -170px;
+		background-size: 980px 250px;
+		
+	}
+}
 
 
 /* ######################## SPRITEKITT-HOME ############################# */

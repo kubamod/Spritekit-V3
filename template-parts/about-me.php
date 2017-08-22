@@ -72,7 +72,7 @@ body {
 </div>
 
 <script>
-$(".logo").attr("src","<?php echo get_template_directory_uri() . '/assets/img/SiriVoice-whtie.png' ?>");
+$(".logo").attr("src","<?php echo get_template_directory_uri() . '/assets/img/SiriVoice-white.png' ?>");
 </script>
 <?php get_footer(); 
 ?>

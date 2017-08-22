@@ -57,7 +57,7 @@ get_header(); ?>
 		</main><!-- #main -->
 		
 </div><!-- #primary -->
-	<img src="<?php echo get_template_directory_uri() . '/assets/img/Siri.png'; ?>"  class="siri-pagination" width="400" />
+	<img src="<?php echo get_template_directory_uri() . '/assets/img/Siri.png'; ?>"  class="siri-pagination img-fluid" width="400" />
 <?php
 
 get_footer();
