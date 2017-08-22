@@ -53,5 +53,17 @@
 <!-- <div class="breadcrumb"><?php get_breadcrumb(); ?><a class="rss" href="<?php echo esc_url( home_url( '/?feed=rss' ) ); ?>">RSS</a></div> -->
 </div>
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Header siri voice -->
+<ins class="adsbygoogle"
+     style="display:block; max-width:1024px; margin-left:auto;margin-right:auto; margin-bottom:80px; height:100px !important;"
+     data-ad-client="ca-pub-9140220701206196"
+     data-ad-slot="9810880149"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
 <!-- 
 			<a href="<?php echo esc_url( home_url() ); ?>" style="padding-left:0;"><img src="<?php echo get_template_directory_uri().'/assets/img/logo3.png'; ?>" width="35"  alt="logo" class="logo "/><span class="blog-info"><?php echo get_bloginfo(); ?></span></a> -->

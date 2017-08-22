@@ -251,6 +251,12 @@ select {
 	margin: 0;
 }
 
+
+.ads-container {
+	max-width: 1020px;
+	margin: auto;
+}
+
 /* ########################## BLOG ################################################## */
 
 .entry-title a {

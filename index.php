@@ -49,7 +49,16 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Siri Voice bottom -->
+<ins class="adsbygoogle"
+     style="display:block; max-width:1024px; margin-left:auto;margin-right:auto; margin-bottom:80px; height:100px !important;"
+     data-ad-client="ca-pub-9140220701206196"
+     data-ad-slot="6714121121"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 		<div class="pagination">
 			<?php echo paginate_links(); ?> <br />
 			<div class="ad-header"></div>
