@@ -34,10 +34,7 @@ a:hover {
 body {
 	background-color: #fff;
 	color: #000 !important;
-	font-family: -apple-system, BlinkMacSystemFont, 
-    "Segoe UI", "Roboto", "Oxygen", 
-    "Ubuntu", "Cantarell", "Fira Sans", 
-    "Droid Sans", "Helvetica Neue", sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .sticky-wrapper {
@@ -260,8 +257,7 @@ select {
 /* ########################## BLOG ################################################## */
 
 .entry-title a {
-	color: rgba(0, 0, 0, 0.8);
-	font-size: 26px;
+	color: rgba(0, 0, 0, 0.9);
 }
 
 .entry-title a:hover {
@@ -269,7 +265,6 @@ select {
 }
 
 .entry-title {
-	font-size: 26px;
 	margin-bottom: 0;
 }
 
@@ -283,7 +278,6 @@ select {
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 17px !important;
-	color: #333;
 	line-height: 29px;
 	font-weight: normal !important;
 	box-sizing: content-box;
@@ -331,6 +325,7 @@ select {
 	margin-right: auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	font-family: 'Noto Serif', serif !important;
 }
 
 .img-left {
@@ -420,9 +415,14 @@ select {
 }
 
 .entry-content {
-	color: rgba(0, 0, 0, 0.75);
+	color: rgba(0, 0, 0, 0.9);
 	font-size: 18px;
+	
 
+}
+
+.more-link { 
+	font-size:16px;
 }
 
 .entry-summary {

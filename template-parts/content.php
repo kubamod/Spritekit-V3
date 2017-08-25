@@ -27,9 +27,9 @@ if (is_singular())
 		
 		<?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h3 class="entry-title">', '</h2>' );
 		else :
-			the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
+			the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
@@ -50,7 +50,7 @@ if (is_singular())
 			the_content( sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading >', 'spritekit-v3' ),
+					__( 'Continue reading →', 'spritekit-v3' ),
 					array(
 						'span' => array(
 							'class' => array(),
