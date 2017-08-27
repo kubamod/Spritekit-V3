@@ -18,8 +18,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<!-- chuuuuuuuuuuj -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet"> 
 	<script src="<?php echo get_template_directory_uri() . '/js/jquery-3.2.1.min.js'; ?>"></script>
 	<script src="<?php echo get_template_directory_uri() . '/js/bootstrap.js'; ?>"></script>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -28,10 +27,10 @@
 
 <body <?php body_class();  ?>>
 <a href="<?php echo get_home_url(); ?>">
-	<img src="<?php echo get_template_directory_uri() . '/assets/img/SiriVoice.png'; ?>" width="500" class="logo img-fluid" alt="logo" />
+	<img src="<?php echo get_template_directory_uri() . '/assets/img/sirivoice-new.png'; ?>" width="300" class="logo img-fluid" alt="logo" />
 </a>
 	<header id="masthead" class="site-header">
-		<div class="container" style="max-width:1020px; padding: 0;">
+		<div class="container" style="max-width:900px; padding: 0;">
 		
 			
 		
@@ -43,7 +42,7 @@
 					
 					'theme_location' => 'menu-1',
 					'menu_id'        => 'primary-menu',
-					'menu_class'     => 'nav nav-pills nav-justified',
+					'menu_class'     => 'nav nav-pills center-pills',
 				) );
 ?>
 		</nav><!-- #site-navigation -->
