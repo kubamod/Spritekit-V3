@@ -27,7 +27,7 @@
 
 <body <?php body_class();  ?>>
 <a href="<?php echo get_home_url(); ?>">
-	<img src="<?php echo get_template_directory_uri() . '/assets/img/sirivoice-new.png'; ?>" width="300" class="logo img-fluid" alt="logo" />
+	<img src="<?php echo get_template_directory_uri() . '/assets/img/spritekit7.png'; ?>" width="300" class="logo img-fluid" alt="logo"  />
 </a>
 	<header id="masthead" class="site-header">
 		<div class="container" style="max-width:900px; padding: 0;">
@@ -39,7 +39,6 @@
 			
 			<?php
 				wp_nav_menu( array(
-					
 					'theme_location' => 'menu-1',
 					'menu_id'        => 'primary-menu',
 					'menu_class'     => 'nav nav-pills center-pills',
@@ -56,8 +55,8 @@
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Header siri voice -->
-<ins class="adsbygoogle"
-     style="display:block; max-width:1024px; margin-left:auto;margin-right:auto; margin-bottom:80px; height:100px !important;"
+<ins class="adsbygoogle first-ad"
+     style="display:none; max-width:1024px; margin-left:auto;margin-right:auto; margin-bottom:80px; height:100px !important;"
      data-ad-client="ca-pub-9140220701206196"
      data-ad-slot="9810880149"
      data-ad-format="auto"></ins>
