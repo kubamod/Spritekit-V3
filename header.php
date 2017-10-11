@@ -18,7 +18,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<!-- chuuuuuuuuuuj -->
-	<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet"> <!-- FOR TEXT -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"> <!-- FOR CODE -->
+
 	<script src="<?php echo get_template_directory_uri() . '/js/jquery-3.2.1.min.js'; ?>"></script>
 	<script src="<?php echo get_template_directory_uri() . '/js/bootstrap.js'; ?>"></script>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">

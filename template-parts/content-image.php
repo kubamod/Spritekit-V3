@@ -10,68 +10,98 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <header class="entry-header">
-    <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
-    <div class="image-post-type text-center">
-        <img src="<?php echo $url; ?>" class="img-responsive img-post-type" style="margin:auto;" />
-        <?php if ( is_single() ) { ?>
-        		<?php
-		if ( is_single() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
+ 
 
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<span class="time"><?php the_time('M d, Y');  ?></span>
-			<a target="_blank"  href="https://twitter.com/modrzjwzky?lang=pl">@<?php the_author() ?></a>
-		</div>
-		<?php
-		endif; ?>
-        <?php } else { ?>
-        <div class="caption-image-post">
-        <?php 
-        if ( is_single() ) :
-			the_title( '<h1 class="entry-title-image">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title-image"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-        ?>
-		<?php
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<span class="time"><?php the_time('M d, Y');  ?></span>
-			<a target="_blank"  href="https://twitter.com/modrzjwzky?lang=pl">@<?php the_author() ?></a>
-		</div>
-        </div>
-		<?php
-		endif; ?>
-        <?php } ?>
-        
-        </div>
-	</header><!-- .entry-header -->
-<?php if ( is_single()) { ?>
-	<div class="entry-content">
-		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Czytaj dalej <span class="meta-nav">&rarr;</span>', '_s' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
+	
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', '_s' ),
-				'after'  => '</div>',
-			) );
-		?>
-        
-        <footer class="entry-footer">
-		<?php  spritekit_v3_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-        
+    
+		<div class="full-post code full-post-code<?php if (is_singular()) echo 'padding-article'; ?>" style="">
+		<div class="row">
+	
+		<div class="col-sm-9">
+			<header class="code-entry-header">
+				
+					<?php
+					if ( 'post' === get_post_type() ) {
+						/* translators: used between list items, there is a space after the comma */
+						$categories_list = get_the_category_list( esc_html__( ', ', 'spritekit-v3' ) );
+						if ( $categories_list ) {
+							/* translators: 1: list of categories. */
+							printf( '<div class="code-cat-links">' . esc_html__( '%1$s', 'spritekit-v3' ) . '</div>', $categories_list ); // WPCS: XSS OK.
+						}
+					}
+					?>
+					<?php
+						if ( is_singular() ) :
+							the_title( '<h3 class="code-entry-title">', '</h2>' );
+						else :
+							the_title( '<h3 class="code-entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
+						endif;
+
+						if ( 'post' === get_post_type() ) : ?>
+						
+						<?php
+						endif; ?>
+			</header><!-- .entry-header -->
+		</div>
+				
+	</div>
+
+	<div class="entry-content row">
+
+		<div class="col-sm-2 push-sm-10">
+					<div class="entry-meta"> 
+						
+						<span class="time"><?php the_time('M d, Y');  ?></span>
+						<a target="_blank"  href="https://twitter.com/modrzjwzky?lang=pl">@<?php the_author() ?></a>
+						
+					</div> <!-- entry meta end -->
+
+					<footer class="entry-footer">
+						<?php spritekit_v3_entry_footer(); ?>
+					</footer><!-- .entry-footer -->
+
+		</div>
+				
+		<div class="col-sm-10 pull-sm-2">
+			
+		
+			<?php
+				the_content( sprintf(
+					wp_kses(
+						/* translators: %s: Name of current post. Only visible to screen readers */
+						__( 'Continue reading →', 'spritekit-v3' ),
+						array(
+							'span' => array(
+								'class' => array(),
+							),
+						)
+					),
+					get_the_title()
+				) );
+
+				wp_link_pages( array(
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'spritekit-v3' ),
+					'after'  => '</div>',
+				) );
+			?>
+
+			
+	</div>
+	
 	</div><!-- .entry-content -->
-<?php } ?>
-	<div class="line"> </div>
+		<?php if(is_single()){ ?>
+		<h2 class="comments-h" >Comments</h2>
+		<?php 
+			echo comment_form(); 
+		?>
+		<?php
+} ?>
+
+
+	
+	</div>
+</div>
+
 </article><!-- #post-## -->
 <hr class="separator" />

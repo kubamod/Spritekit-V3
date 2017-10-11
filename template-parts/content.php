@@ -112,7 +112,9 @@ if (is_singular())
 	<h2 class="comments-h" >Comments</h2>
 
 
-
+<?php 
+	echo comment_form(); 
+?>
 	
 
 	
